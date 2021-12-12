@@ -2,32 +2,30 @@ use std::fs::File;
 use std::io::{BufRead, BufReader};
 
 fn main() {
-    let sample_path_part1 = "sample1.txt";
+    let sample_path = "sample.txt";
     println!(
         "Solution of part1 with {}: {}",
-        sample_path_part1,
-        solve(sample_path_part1, 1)
+        sample_path,
+        solve(sample_path, 1)
     );
 
-    let input_path_part1 = "input1.txt";
+    let input_path = "input.txt";
     println!(
         "Solution of part1 with {}: {}",
-        input_path_part1,
-        solve(input_path_part1, 1)
+        input_path,
+        solve(input_path, 1)
     );
 
-    let sample_path_part2 = "sample2.txt";
     println!(
         "Solution of part2 with {}: {}",
-        sample_path_part2,
-        solve(sample_path_part2, 3)
+        sample_path,
+        solve(sample_path, 3)
     );
 
-    let input_path_part2 = "input2.txt";
     println!(
         "Solution of part2 with {}: {}",
-        input_path_part2,
-        solve(input_path_part2, 3)
+        input_path,
+        solve(input_path, 3)
     );
 }
 
